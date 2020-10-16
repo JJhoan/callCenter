@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="interrupciones:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/interrupciones_jar</output-path>
+    <root id="archive" name="interrupciones.jar">
+      <element id="module-output" name="interrupciones" />
+    </root>
+  </artifact>
+</component>
