@@ -23,8 +23,9 @@ public class Empleado implements Comparable<Empleado> {
         return prioridad;
     }
 
+    @Override
     public int compareTo(Empleado empleado) {
-        return this.prioridad.compareTo( empleado.getPrioridad() );
+        return Integer.compare(this.prioridad, empleado.prioridad);
     }
 
     @Override

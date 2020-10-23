@@ -9,24 +9,25 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 public class Main {
 
-    private final static int llamadas = 100;
+    private final static int llamadas = 30;
 
     public static void main(String[] args) {
         System.out.println("Comienza!");
         PriorityBlockingQueue<Empleado> queue = new PriorityBlockingQueue<>(  );
+        int j = 0;
 
         for (int i = 0; i < 5 ; i++) {
-            Operador operador = new Operador( i, "Operador " + i, 1);
+            Operador operador = new Operador( i, "Operador " + i, j++);
             queue.add( operador );
         }
 
         for (int i = 0; i < 3 ; i++) {
-            Supervisor supervisor = new Supervisor( i, "Supervisor " + i, 2);
+            Supervisor supervisor = new Supervisor( i, "Supervisor " + i, j++);
             queue.add( supervisor );
         }
 
         for (int i = 0; i < 2 ; i++) {
-            Director director = new Director( i, "Director " + i, 3);
+            Director director = new Director( i, "Director " + i, j++);
             queue.add( director );
         }
 
